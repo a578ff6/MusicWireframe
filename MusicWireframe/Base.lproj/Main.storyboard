@@ -1,24 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicWireframe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="One Last Kiss" translatesAutoresizingMaskIntoConstraints="NO" id="L3V-7F-E2j">
+                                <rect key="frame" x="20" y="79" width="353" height="353"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L3V-7F-E2j" secondAttribute="height" multiplier="1:1" id="hXd-f5-dhD"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgT-Oj-Mut">
+                                <rect key="frame" x="35.333333333333343" y="480.33333333333326" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hgT-Oj-Mut" secondAttribute="height" multiplier="1:1" id="2Z1-VU-L2e"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b86-39-c2f">
+                                <rect key="frame" x="161.66666666666666" y="480.33333333333326" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b86-39-c2f" secondAttribute="height" multiplier="1:1" id="w8J-og-G6h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJ3-8C-FWA">
+                                <rect key="frame" x="287.66666666666669" y="480.33333333333326" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UJ3-8C-FWA" secondAttribute="height" multiplier="1:1" id="5Ry-y8-Xuh"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="3H8-nX-WEs">
+                                <rect key="frame" x="50" y="492.00000000000006" width="293" height="46.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-Rx-Qdk">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="46.666666666666664"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="backward.end.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="TdG-cd-lch"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5O9-vn-MGq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk3-NW-hOd">
+                                        <rect key="frame" x="125.33333333333336" y="0.0" width="42.666666666666671" height="46.666666666666664"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="play.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                        </state>
+                                        <state key="selected" image="pause.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playPauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ve7-v0-JmY"/>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="n8T-J7-JKm"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1BK-KB-gPx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqf-T9-OSM">
+                                        <rect key="frame" x="252.33333333333329" y="0.0" width="40.666666666666657" height="46.666666666666664"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="forward.end.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="mKc-qv-cyf"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ht8-ws-mL7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3H8-nX-WEs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8eY-VP-mRF"/>
+                            <constraint firstItem="UJ3-8C-FWA" firstAttribute="centerY" secondItem="Sqf-T9-OSM" secondAttribute="centerY" id="AR6-t4-XY7"/>
+                            <constraint firstItem="hgT-Oj-Mut" firstAttribute="height" secondItem="ixR-Rx-Qdk" secondAttribute="height" multiplier="1.5" id="EYP-2e-Ycb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L3V-7F-E2j" secondAttribute="trailing" constant="20" id="Eva-Y3-f25"/>
+                            <constraint firstItem="L3V-7F-E2j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FL2-ve-QzW"/>
+                            <constraint firstItem="UJ3-8C-FWA" firstAttribute="height" secondItem="Sqf-T9-OSM" secondAttribute="height" multiplier="1.5" id="QBz-WC-332"/>
+                            <constraint firstItem="b86-39-c2f" firstAttribute="height" secondItem="Zk3-NW-hOd" secondAttribute="height" multiplier="1.5" id="Qo8-uK-PnC"/>
+                            <constraint firstItem="hgT-Oj-Mut" firstAttribute="centerX" secondItem="ixR-Rx-Qdk" secondAttribute="centerX" id="YlT-tm-hoD"/>
+                            <constraint firstItem="L3V-7F-E2j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZNc-4Q-E9a"/>
+                            <constraint firstItem="b86-39-c2f" firstAttribute="centerY" secondItem="Zk3-NW-hOd" secondAttribute="centerY" id="do2-2q-2lW"/>
+                            <constraint firstItem="3H8-nX-WEs" firstAttribute="top" secondItem="L3V-7F-E2j" secondAttribute="bottom" constant="60" id="kzJ-Ay-9q8"/>
+                            <constraint firstItem="UJ3-8C-FWA" firstAttribute="centerX" secondItem="Sqf-T9-OSM" secondAttribute="centerX" id="rsy-Ez-aas"/>
+                            <constraint firstItem="b86-39-c2f" firstAttribute="centerX" secondItem="Zk3-NW-hOd" secondAttribute="centerX" id="u24-I5-kWd"/>
+                            <constraint firstItem="hgT-Oj-Mut" firstAttribute="centerY" secondItem="ixR-Rx-Qdk" secondAttribute="centerY" id="wpw-27-I4v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3H8-nX-WEs" secondAttribute="trailing" constant="50" id="zV8-SD-NC4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="L3V-7F-E2j" id="45s-28-BzL"/>
+                        <outlet property="forwardBackground" destination="UJ3-8C-FWA" id="fne-cI-jsg"/>
+                        <outlet property="forwardButton" destination="Sqf-T9-OSM" id="0Lv-bS-43h"/>
+                        <outlet property="playPauseBackground" destination="b86-39-c2f" id="mBa-V0-GLm"/>
+                        <outlet property="playPauseButton" destination="Zk3-NW-hOd" id="zpx-QF-lOL"/>
+                        <outlet property="reverseBackground" destination="hgT-Oj-Mut" id="IL3-s3-Ntl"/>
+                        <outlet property="reverseButton" destination="ixR-Rx-Qdk" id="frz-f0-RgB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="One Last Kiss" width="1200" height="1200"/>
+        <image name="backward.end.fill" catalog="system" width="128" height="101"/>
+        <image name="forward.end.fill" catalog="system" width="128" height="101"/>
+        <image name="pause.fill" catalog="system" width="117" height="128"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
